@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('socccerrr.png'); /* Replace 'background.jpg' with your image */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
+#main-menu, #game-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#main-menu h1, #game-screen #header h1 {
+    margin-bottom: 20px;
+}
+
+#main-menu p, #main-menu ul {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+#header {
+    background-color: #204060;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#player-info, #story, #club-info, #choices, #position-selection, #country-selection {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 500px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 5px; /* Add margin to create space between buttons */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+#stats-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+#stats-table th, #stats-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.selected {
+    background-color: #ffcc00; /* Yellow */
+    color: black;
+}
+
+
+#stats-table th {
+    background-color: #f2f2f2;
+}
+
+.hall-of-fame-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #ff0000; /* Red */
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 5px; /* Add margin to create space */
+}
+
+.hall-of-fame-btn:hover {
+    background-color: #cc0000; /* Darker red */
+}

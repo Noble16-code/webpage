@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #1E1E1E; /* Dark background */
+            color: white; /* Default text color */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 6rem; /* Large text size */
+            background: linear-gradient(90deg, #FF5733, #FFC300, #33FF57, #3375FF, #FF33B5); /* Gradient color */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; /* Make text transparent to show gradient */
+            animation: fadeIn 3s ease-in-out infinite alternate; /* Fade in animation */
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.8;
+            }
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: #FFD700; /* Gold color for the subtext */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>COMING SOON</h1>
+        <p>Stay Tuned!</p>
+    </div>
+</body>
+</html>

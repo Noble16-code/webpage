@@ -1,0 +1,337 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Dark Background & Text Color */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #e0e0e0; /* Light text */
+    background-color: #121212; /* Dark background */
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1E1E1E; /* Dark gray */
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFD700; /* Gold links */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFA500; /* Bright orange on hover */
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('hero-background.jpg'); /* Keep this or use a darker overlay */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* Overlay for Hero Section */
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+#hero .hero-content h1 {
+    font-size: 3em;
+    animation: fadeIn 1s ease-in;
+}
+
+#hero p {
+    font-size: 1.2em;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #FFD700; /* Gold */
+    color: #333; /* Dark text */
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.cta-btn:hover {
+    background-color: #FFA500; /* Bright orange on hover */
+    transform: scale(1.05);
+}
+
+/* Sections */
+.section {
+    padding: 60px 0;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #FFD700; /* Gold headings */
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Skills */
+.skill-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    width: 45%;
+    margin-bottom: 20px;
+    background-color: #1E1E1E; /* Dark gray for cards */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Projects */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #1E1E1E; /* Dark card background */
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover img {
+    transform: scale(1.05);
+}
+
+.project-item h3 {
+    margin-top: 10px;
+    color: #FFD700; /* Gold text for titles */
+}
+
+/* Contact Section Styling */
+#contact {
+    background-color: #1E1E1E; /* Dark background */
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #FFD700; /* Gold headings */
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-item {
+    background-color: #252525; /* Darker card background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+}
+
+.contact-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.contact-item i {
+    font-size: 2.5rem;
+    color: #FFD700; /* Gold color for icons */
+    margin-bottom: 15px;
+}
+
+.contact-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #FFD700; /* Gold for headings */
+}
+
+.contact-item p {
+    font-size: 1rem;
+    color: #e0e0e0; /* Light gray */
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #FFD700; /* Gold */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #FFA500; /* Bright orange on hover */
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #1E1E1E; /* Dark footer */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Smooth transition for project buttons */
+.project-item .cta-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #FFD700; /* Gold */
+    color: #333; /* Dark text */
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.project-item .cta-btn:hover {
+    background-color: #FFA500; /* Bright orange */
+    transform: scale(1.05);
+}
+
+/* Add some margin between the project buttons */
+.project-item .cta-btn + .cta-btn {
+    margin-left: 10px;
+}
+
+/* Add media queries */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    #hero .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    .skill-item, .contact-item {
+        width: 100%;
+    }
+
+    .project-item {
+        margin-bottom: 20px; /* Ensure spacing */
+    }
+
+    #contact {
+        padding: 30px 0;
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact-item {
+        width: 90%; /* Ensure contact items are full width */
+    }
+}
+
+@media (max-width: 480px) {
+    #hero .hero-content h1 {
+        font-size: 2em;
+    }
+
+    #hero p {
+        font-size: 0.9em;
+    }
+
+    .cta-btn {
+        font-size: 0.9em; /* Adjust button font size */
+    }
+}
