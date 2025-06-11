@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Career Sim</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main-menu">
+        <h1>Soccer Career Sim</h1>
+        <p>Welcome to the Soccer Career Sim! You are a 16-year-old aspiring soccer player. Your goal is to build your. Here's how you can play:</p>
+        <ul>
+            <li><strong>Join a Soccer Club:</strong> Use the button to simulate a season</li>
+            <li><strong>Train Alone:</strong> Improve your rating by training, Injuries are factored in.</li>
+            <li><strong>Focus on Personal Life:</strong> Balance your career with personal life.</li>
+            <li>Choose your position and national team to start your journey.</li>
+            <li>Aim to achieve a high rating and enter the Hall of Fame!</li>
+            <li>Hall of Fame requirement varies by position</li>
+            <li>Goodluck</li>
+        </ul>
+        <button onclick="startGame()">I Understand</button>
+    </div>
+
+    <div id="game-screen" style="display: none;">
+    <div id="header">
+        <h1>Soccer Career Sim</h1>
+    </div>
+
+    <div id="player-info">
+        <p id="age">Age: 16</p>
+        <p id="rank">Rank: Amateur</p>
+        <p id="value">Value: $55,000</p>
+        <p id="sponsor">Sponsor: Local Business</p>
+    </div>
+
+    <div id="story">
+        <p id="story-text">Welcome to the Soccer Adventure Game! You are a 16-year-old aspiring soccer player. What do you do?</p>
+    </div>
+
+    <div id="club-info"></div>
+
+    <div id="choices">
+        <button onclick="choice1()">Join a Soccer Club</button>
+        <button onclick="choice2()">Train Alone to Improve Skills</button>
+        <button onclick="choice3()">Focus on Personal Life</button>
+    </div>
+
+    <div id="position-selection">
+        <p>Choose Position:</p>
+        <button onclick="setPosition('Goalkeeper')">Goalkeeper</button>
+        <button onclick="setPosition('Defender')">Defender</button>
+        <button onclick="setPosition('Midfielder')">Midfielder</button>
+        <button onclick="setPosition('Striker')">Striker</button>
+    </div>
+
+    <div id="country-selection">
+        <p>Select National Team:</p>
+        <button onclick="selectCountry('Nigeria')">Nigeria</button>
+        <button onclick="selectCountry('Argentina')">Argentina</button>
+        <button onclick="selectCountry('Brazil')">Brazil</button>
+        <button onclick="selectCountry('Germany')">Germany</button>
+        <button onclick="selectCountry('Spain')">Spain</button>
+        <button onclick="selectCountry('France')">France</button>
+        <button onclick="selectCountry('Italy')">Italy</button>
+        <button onclick="selectCountry('Netherlands')">Netherlands</button>
+        <button onclick="selectCountry('Portugal')">Portugal</button>
+        <button onclick="selectCountry('England')">England</button>
+    </div>
+
+    <table id="stats-table">
+        <thead>
+            <tr>
+                <th>Goals</th>
+                <th>Assists</th>
+                <th>Clean Sheets</th>
+                <th>Appearances</th>
+                <th>Trophies</th>
+                <th>International Goals</th>
+                <th>International Assists</th>
+                <th>International Clean Sheets</th>
+                <th>International Appearances</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Stats rows will be dynamically inserted here -->
+        </tbody>
+    </table>
+
+    <button class="hall-of-fame-btn" onclick="checkHallOfFame()">Hall of Fame</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
